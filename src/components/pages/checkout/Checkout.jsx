@@ -13,7 +13,7 @@ const Checkout = () => {
   };
 
   const funcionInputs = (evento) => {
-    const { value, name } = evento.target; // {}
+    const { value, name } = evento.target; 
     setUserInfo({ ...userInfo, [name]: value });
   };
 
