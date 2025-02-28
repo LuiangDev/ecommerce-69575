@@ -6,11 +6,11 @@ export const Navbar = () => {
       style={{
         display: "flex",
         justifyContent: "space-between",
-        backgroundColor: "steelblue",
+        backgroundColor: "#DBF79F",
         padding: "20px",
       }}
     >
-      <Link to="/">Mi tienda</Link>
+      <Link to="/">Mi Tienda</Link>
       <ul
         style={{
           display: "flex",
@@ -18,11 +18,11 @@ export const Navbar = () => {
           listStyle: "none",
         }}
       >
-        <Link to="/category/deportivas">deportivas</Link>
-        <Link to="/category/urbanas">urbanas</Link>
+        <Link to="/category/laptopsycomputadoras">Laptops y Computadoras</Link>
+        <Link to="/category/accesorioscomputacion">Accesorios de Computación</Link>
       </ul>
       {/* <a href="/cart">Carrito</a> */}
-      <Link to="/cart" style={{ textDecoration: "none", color: "white" }}>
+      <Link to="/cart" style={{ textDecoration: "none", color: "black" }}>
         <CartWidget />
       </Link>
     </nav>

@@ -1,3 +1,4 @@
+import { Footer } from "./components/layouts/footer/Footer";
 import { Navbar } from "./components/layouts/navbar/Navbar";
 import Cart from "./components/pages/cart/Cart";
 import Checkout from "./components/pages/checkout/Checkout";
@@ -18,6 +19,7 @@ function App() {
 
         <Route path="*" element={<h2>404 Not found</h2>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

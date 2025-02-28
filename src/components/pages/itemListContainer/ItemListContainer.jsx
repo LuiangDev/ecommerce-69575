@@ -5,10 +5,7 @@ import { useParams } from "react-router";
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([]);
-  const { name } = useParams(); // {x: 1, b: 2 } {}.c ---> undefined
-
-  // undefined ---> home ---> ver todos
-  // string ----> categoria --> quiero filtrar
+  const { name } = useParams();
 
   useEffect(() => {
     const getProducts = new Promise((resolve, reject) => {
@@ -30,7 +27,7 @@ export const ItemListContainer = () => {
   }, [name]);
 
   return (
-    <section>
+    <section style={{textAlign: "center"}}>
       <h2>Mis productos</h2>
       {items.map((item) => {
         return <ProductCard key={item.id} item={item} />;

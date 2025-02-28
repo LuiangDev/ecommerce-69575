@@ -14,11 +14,10 @@ const Counter = ({ darkMode }) => {
     setContador(contador - 1);
   };
 
-  // console.log("peticion fuera del effect");
 
   useEffect(() => {
     console.log("Una peticion a un servidor que esta en japón");
-  }, [name, darkMode]); // array de dependencias
+  }, [name, darkMode]);
 
   return (
     <div>

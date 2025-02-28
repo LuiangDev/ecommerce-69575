@@ -9,7 +9,6 @@ const Checkout = () => {
 
   const funcionFormulario = (evento) => {
     evento.preventDefault();
-    // nos conectamos con el backend
     console.log(userInfo);
   };
 

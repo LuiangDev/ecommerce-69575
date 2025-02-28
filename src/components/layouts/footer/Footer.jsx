@@ -1,7 +1,7 @@
 export const Footer = () => {
   return (
-    <footer style={{ backgroundColor: "red" }}>
-      <h2>mis redes sociales: </h2>
+    <footer style={{ backgroundColor: "gray", padding: "20px", color: "white", textAlign: "center" }}>
+      <h2>Mis Redes Sociales: </h2>
     </footer>
   );
 };
